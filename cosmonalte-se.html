@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Fim da Font-->
+    <link rel="stylesheet" href="login.css"> <!--externo-->
+    <link rel="website icon" type="png" href="img/mon.jpg">
+    <title> Cosmonalte-se </title>
+
+</head>
+
+<body>
+    <div class="box">
+        <i style="--clr:#a296ca;"></i>
+        <i style="--clr:#ff3f75;"></i>
+        <i style="--clr:#91d1e6;"></i>
+        <div class="login">
+            <h2>Cosmonalte-se</h2>
+            <div class="info">
+                <input type="text" placeholder="Nome do usário">
+            </div><!--info-->
+            <div class="info">
+                <input type="password" placeholder="Senha">
+            </div><!--info-->
+            <div class="info">
+                <audio id="minhaMusica" controls controls style="display: none;">
+                    <source src="audio/infinito.mp3" type="audio/mp3" />
+                </audio>
+                <input type="submit" value="Cosmonalte-se" id="botaoReproduzir">
+            </div><!--info-->
+            
+            <script>
+                document.getElementById('botaoReproduzir').addEventListener('click', function() {
+                    var musica = document.getElementById('minhaMusica');
+                    musica.play();
+                });
+            </script>
+            
+            <div class="links">
+                <a href="#">Esqueceu a Senha</a>
+                <a href="#">Inscreva-se</a>
+                  
+            </div><!--links-->
+
+        </div><!--login-->
+    </div><!--box-->
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+/*Estilo Geral*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* para deixar tudo padronizado, todos dentro da borda da caixa */
+body {
+    /*background: linear-gradient(80deg, #9091da 15%, #91d1e6 85%) ;*/
+    background: linear-gradient(90deg, rgba(144, 145, 218, 1) 16%, rgba(190, 117, 179, 1) 68%, rgb(221, 131, 149) 100%);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.geral {
+    display: flex;
+}
+
+/* para editar coisas especificas sem alterar o resto*/
+
+/* limitar os limites do site*/
+h2.titulo {
+    color: #dfdfdf;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #4a1e69;
+}
+
+/*Estilo do cabeçario*/
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*para ficar o máximo distante um do outro*/
+    transition: .4s;
+    /*pra ser mais suave */
+}
+
+/* para não interferi nos demais elementos do header que não precisam de um display flex*/
+header a {
+    color: #4e5d8e;
+    text-decoration: none;
+    display: inline-block;
+    /* para conseguir fazer o efito trasform funcionar, pois é line level */
+
+}
+
+/*test-decocation: nome , para tirar a linha de baixo do link */
+header a:hover {
+    color: #fff;
+    transform: scale(1.2);
+    /*só funciona para elemento in block level*/
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+/* para tirar as bolinhas da lista */
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* para ficar uma do lado da outra e o padding para gerar o espaço entre elas */
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: #db95c5;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #fca5e0c5;
+    /* para dar um sombreado no botão*/
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 40px 10px #ffffffc0;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 80%;
+    /* 100% por imagem no carrossel */
+    animation: carousel 10s infinite linear alternate;
+    /* Adiciona uma animação de rolagem automática */
+}
+
+.carousel-slide img {
+    width: 33.33%;
+    object-fit: cover;
+    flex-shrink: 0;
+    /* Evita que as imagens diminuam de tamanho */
+
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-40%);
+
+    }
+
+    50% {
+        transform: translateX(-10%);
+
+    }
+
+    100% {
+        transform: translateX(-40%);
+    }
+}
+
+/*Topo do Site*/
+section.topo-do-site {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff4d;
+}
+
+/*pra não deixar as coisas grudadas na lateral */
+
+section.topo-do-site.geral {
+    align-items: center;
+    justify-content: center;
+    /*pra alinhar as coias */
+    gap: 50 px;
+    /*espaçamento entre os elementos (texto e imagem) */
+}
+
+/*para aplicar exclusivamente alterações nessa classe do topo*/
+
+.topo-do-site .texto-site-up h1 {
+    color: #dfdfdf;
+    font-size: 30px;
+    line-height: 30px;
+    /*ditancia entre as linhas do texto */
+}
+
+/*alterar o texto do topo */
+
+.topo-do-site .texto-site-up p {
+    color: #011867;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.topo-do-site .imagem-topo img {
+    position: relative;
+    animation: flu 2s ease-in-out infinite alternate;
+    /*pra ficar suave */
+    height: 400px;
+    width: auto;
+    margin: 0 10px 10px 0;
+    float: right;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+
+}
+
+@keyframes flu {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/*Estilo definição*/
+
+section.definicao {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+}
+
+.definicao-box {
+    flex: 1;
+    color: #011867;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #dfdfdf;
+    margin-top: 45px;
+    transition: 1s;
+
+}
+
+.definicao .definicao-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #dfdfdf;
+}
+
+
+.definicao .definicao-box h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.definicao .definicao-box p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/*Curiosidade*/
+section.curiosidade {
+    box-shadow: 0 0 40px 10px #ffffff3a;
+
+}
+
+section.curiosidade .text h2 {
+    font-size: 50px;
+    color: #4a1e69;
+    text-align: center;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.571);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p {
+    color: #011867;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.container .card .content a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .container .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+/*Sobre*/
+section.sobre {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff4d;
+}
+
+/*pra não deixar as coisas grudadas na lateral */
+
+section.sobre .interface {
+    align-items: center;
+    justify-content: center;
+    /*pra alinhar as coias */
+}
+
+/*para aplicar exclusivamente alterações nessa classe do topo*/
+
+
+section.sobre .interface h2 {
+    font-size: 50px;
+    color: #4a1e69;
+    text-align: center;
+}
+
+section.sobre .interface span {
+    font-size: 50px;
+    color: #dfdfdf;
+    text-align: center;
+
+}
+
+.sobre .interface .geral .text p {
+    color: #011867;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+
+}
+
+
+.geral .gif img {
+    height: 280px;
+    width: auto;
+    border-radius: 100%;
+    float: right;
+}
+
+/*Estilo Rodapé*/
+footer .logobaixo {
+    display: flex; /* Tornar o container 'logobaixo' um flex container */
+    align-items: center; /* Alinhar os itens verticalmente ao centro */
+  }
+  
+  footer .logobaixo img {
+    width: auto;
+    height: 190px;
+   padding: 45px; /* Adicione uma margem à direita da imagem para espaçamento */
+  }
+  
+  footer .logobaixo h2 {
+    text-align: center;
+    color: #dfdfdf;
+    padding: 0 300px ; /* Remova as margens padrão do h2 */
+
+  }
