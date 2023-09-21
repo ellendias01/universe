@@ -43,6 +43,79 @@ Nesse arquivo estão documentadas todas as Tags utilizadas no site e suas respec
 ## 🎨 Tags em CSS
 | Nome | Descrição |
 | --- | --- |
+| `*` | Estilo geral do site, para padronizar o tamanho|
+| `body` | Cor e tamanho do fundo |
+| `.inteface` | Padronizar o conteúdo do site|
+| `.geral` | Edição de coisas expecificas sem alterar as demais |
+| `h2.titulo` |Cor, posição e tamanho de h2|
+| `h2.titulo span` | Cor da span |
+| `header` | Estilo do Cabeçalho |
+| `header> .interface` | Para não interferi nos demais elementos do header que não precisam de um display flex |
+| `header a` | Para conseguir fazer o efito trasform funcionar, pois é line level e tirar a linha do link |
+| `header a:houver` | Efeito quando o mouse passa por cima e só funciona em block level |
+| `header nav ul` | Tira as bolinhas da lista |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
+| `link` | É utilizado para acessar recursos externos da página |
 | `link` | É utilizado para acessar recursos externos da página |
 | `link` | É utilizado para acessar recursos externos da página |
 | `link` | É utilizado para acessar recursos externos da página |
