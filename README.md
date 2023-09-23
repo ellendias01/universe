@@ -149,7 +149,6 @@ Nesse arquivo estão documentadas todas as Tags utilizadas no site e suas respec
 | `headings` | Armazena todos os elementos com a classe .section-heading usando a função gsap.utils.toArray |
 | `outerWrappers` |  Armazena todos os elementos com a classe .outer usando a função gsap.utils.toArray |
 | `innerWrappers` | Armazena todos os elementos com a classe .inner usando a função gsap.utils.toArray|
-| `splitHeadings` |  Cria uma matriz de objetos SplitText para dividir os elementos de .section-heading em caracteres, palavras e linhas. Isso é usado para animar o texto de maneira mais granular |
 | `currentIndex` | Inicializado como -1, representando o índice atual da seção |
 | `document.getElementById('botaoReproduzir')` | Código seleciona o elemento HTML com o id "botaoReproduzir"  |
 | `addEventListener` | É usada para adicionar um ouvinte de evento de clique ao botão |
