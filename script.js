@@ -5,7 +5,6 @@ let sections = document.querySelectorAll("section"),
   headings = gsap.utils.toArray(".section-heading"),
   outerWrappers = gsap.utils.toArray(".outer"),
   innerWrappers = gsap.utils.toArray(".inner"),
-  splitHeadings = headings.map(heading => new SplitText(heading, { type: "chars,words,lines", linesClass: "texto" })),
   currentIndex = -1,
   wrap = gsap.utils.wrap(0, sections.length),
   animating;
