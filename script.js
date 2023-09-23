@@ -34,8 +34,8 @@ function gotoSection(index, direction) {
       yPercent: 0 
     }, 0)
     .fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
-    .fromTo(splitHeadings[index].chars, { 
-        autoAlpha: 0, 
+    .fromTo(headings[index].querySelectorAll(".texto"), {
+        autoAlpha: 0,
         yPercent: 150 * dFactor
     }, {
         autoAlpha: 1,
@@ -61,6 +61,3 @@ Observer.create({
 });
 
 gotoSection(0, 1);
-
-// original: https://codepen.io/BrianCross/pen/PoWapLP
-// horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
